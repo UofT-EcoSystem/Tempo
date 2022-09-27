@@ -1,0 +1,14 @@
+# ninja log v5
+0	22929	1629843199651923858	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/layernorm/cuda/build/temp.linux-x86_64-3.7/layernorm.o	b0898c64c9175737
+0	50817	1629843227539757736	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/layernorm/cuda/build/temp.linux-x86_64-3.7/layernorm_kernel.o	5cb08b63b4381a2d
+2	25412	1636510147499877041	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/layernorm/cuda/build/temp.linux-x86_64-3.7/layernorm.o	b0898c64c9175737
+3	57458	1636510179551954363	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/layernorm/cuda/build/temp.linux-x86_64-3.7/layernorm_kernel.o	b10d6d084201e1a8
+3	22458	1636954553866152934	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/layernorm/cuda/build/temp.linux-x86_64-3.7/layernorm.o	b0898c64c9175737
+3	50680	1636954582089936024	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/layernorm/cuda/build/temp.linux-x86_64-3.7/layernorm_kernel.o	5cb08b63b4381a2d
+2	24636	1636955925471149675	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/layernorm/cuda/build/temp.linux-x86_64-3.7/layernorm.o	b0898c64c9175737
+2	56707	1636955957542887536	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/layernorm/cuda/build/temp.linux-x86_64-3.7/layernorm_kernel.o	b10d6d084201e1a8
+3	25656	1637003091716321301	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/layernorm/cuda/build/temp.linux-x86_64-3.7/layernorm.o	b0898c64c9175737
+3	22672	1638054229942746319	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/layernorm/cuda/build/temp.linux-x86_64-3.7/layernorm.o	b0898c64c9175737
+3	51363	1638054258634085852	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/layernorm/cuda/build/temp.linux-x86_64-3.7/layernorm_kernel.o	5cb08b63b4381a2d
+2	24077	1639033889022701702	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/layernorm/cuda/build/temp.linux-x86_64-3.7/layernorm.o	b0898c64c9175737
+3	56887	1639033921833926506	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/layernorm/cuda/build/temp.linux-x86_64-3.7/layernorm_kernel.o	b10d6d084201e1a8

@@ -1,0 +1,5 @@
+**/*.json
+**/*.egg*
+**/__pycache__
+**/dist
+**/build

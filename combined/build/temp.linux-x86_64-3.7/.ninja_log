@@ -1,0 +1,21 @@
+# ninja log v5
+0	24065	1629843643513256265	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	13e6e8dc5e9b27c2
+3	24785	1629959180813746379	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	f3f463cee3541d90
+4	26097	1629959333008926714	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	13e6e8dc5e9b27c2
+3	23486	1630290522784637759	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	13e6e8dc5e9b27c2
+5	49342	1631243522266781478	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/dropout_bitpacking_kernel.o	902f4d290856f67c
+5	51481	1631243524406768309	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/gelu_cuda.o	631f20765692a4f
+5	23976	1631243933864282911	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	f3f463cee3541d90
+5	23509	1631245754178053532	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	f3f463cee3541d90
+4	23600	1631246274538566011	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	f3f463cee3541d90
+3	24002	1631246504929009199	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	f3f463cee3541d90
+4	23463	1631246742019459088	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	f3f463cee3541d90
+4	23384	1631247190552607594	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	f3f463cee3541d90
+9	22920	1631766210486686085	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	f3f463cee3541d90
+2	22249	1631770874257231840	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	13e6e8dc5e9b27c2
+2	24809	1636510090339748591	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	13e6e8dc5e9b27c2
+2	22615	1636954391763380967	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	13e6e8dc5e9b27c2
+2	23241	1636955771104410268	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	13e6e8dc5e9b27c2
+2	24177	1637002921315446133	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	13e6e8dc5e9b27c2
+2	22138	1638054041227063366	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	13e6e8dc5e9b27c2
+7	24362	1639033753573895155	/mnt/PyTorchBuilding/optimizations/smart-memory-optimization/combined/build/temp.linux-x86_64-3.7/combined.o	13e6e8dc5e9b27c2
