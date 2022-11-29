@@ -1,6 +1,0 @@
-combined.cpp
-setup.py
-combined.egg-info/PKG-INFO
-combined.egg-info/SOURCES.txt
-combined.egg-info/dependency_links.txt
-combined.egg-info/top_level.txt

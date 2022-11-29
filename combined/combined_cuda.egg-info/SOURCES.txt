@@ -1,7 +1,0 @@
-combined.cpp
-compress_cuda.cu
-setup.py
-combined_cuda.egg-info/PKG-INFO
-combined_cuda.egg-info/SOURCES.txt
-combined_cuda.egg-info/dependency_links.txt
-combined_cuda.egg-info/top_level.txt
