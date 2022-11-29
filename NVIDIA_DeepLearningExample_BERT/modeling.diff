@@ -1,0 +1,70 @@
+45a46,49
+> from tempo.combined import Combined
+> from tempo.inplace_gelu import InplaceGelu
+> from tempo.inplace_layernorm import InplaceLayerNorm
+> 
+122,131c126,127
+<     # This does not work for any official pytorch version
+<     # Even if approximation is supported, arg `approximate` should be a string
+<     # return torch.nn.functional.gelu(x, approximate=True)
+<     
+<     # Modified by Tempo: do not use approximation
+<     # only up to date PyTorch version support gelu approximation
+<     # and the API used in original script is different from the api in official PyTorch release version
+<     # so for simplicity, we disable gelu approximation here
+<     # this has some effects on the compute throughput
+<     return torch.nn.functional.gelu(x)
+---
+>     # Change Gelu to InplaceGelu
+>     return InplaceGelu()(x)
+284c280
+<         self.LayerNorm = nn.LayerNorm(config.hidden_size, eps=1e-12)
+---
+>         self.LayerNorm = InplaceLayerNorm(config.hidden_size, eps=1e-12)
+285a282
+>         self.combined = Combined(-1, config.hidden_dropout_prob)
+329c326
+<         self.dropout = nn.Dropout(config.attention_probs_dropout_prob)
+---
+>         self.combined = Combined(-1, config.attention_probs_dropout_prob)
+370a368,370
+>         # (bsz, heads, seq, seq) -> (bsz * heads, seq, seq)
+>         attention_scores = attention_scores.view(batch_size * self.num_attention_heads,
+>                                                  seq_length, seq_length)
+372,382c372,375
+<         # Normalize the attention scores to probabilities.
+<         attention_probs = F.softmax(attention_scores, dim=-1)
+< 
+<         # This is actually dropping out entire tokens to attend to, which might
+<         # seem a bit unusual, but is taken from the original Transformer paper.
+<         # (bsz, heads, seq, seq)
+<         attention_probs = self.dropout(attention_probs)
+<         attention_probs = attention_probs.view(batch_size * self.num_attention_heads,
+<                                                seq_length, seq_length)
+< 
+<         context_layer = torch.bmm(attention_probs, value_layer)
+---
+>         # input size: (bsz * heads, seq, seq) @ (bsz * heads, seq, attention_head_size)
+>         # output size: (bsz * heads, seq, attention_head_size)
+>         # CombinedFunction will apply (softmax, dropout, matmul).
+>         context_layer = self.combined(attention_scores, value_layer)
+400c393
+<         self.LayerNorm = nn.LayerNorm(config.hidden_size, eps=1e-12)
+---
+>         self.LayerNorm = InplaceLayerNorm(config.hidden_size, eps=1e-12)
+436c429
+<         self.LayerNorm = nn.LayerNorm(config.hidden_size, eps=1e-12)
+---
+>         self.LayerNorm = InplaceLayerNorm(config.hidden_size, eps=1e-12)
+539c532
+<         self.LayerNorm = nn.LayerNorm(config.hidden_size, eps=1e-12)
+---
+>         self.LayerNorm = InplaceLayerNorm(config.hidden_size, eps=1e-12)
+629c622
+<         elif isinstance(module, nn.LayerNorm):
+---
+>         elif isinstance(module, (nn.LayerNorm, InplaceLayerNorm)):
+1412c1405
+<         elif isinstance(module, nn.LayerNorm):
+---
+>         elif isinstance(module, (nn.LayerNorm, InplaceLayerNorm)):
