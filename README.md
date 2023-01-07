@@ -9,6 +9,7 @@ This repository contains a [PyTorch](https://pytorch.org/) implementation of Tem
 
 - `src`: Source files of Tempo
 - `tempo`: Python interface of Tempo
+- `autotempo`: Preliminary effort to enable Tempo to be automatically applied to Transformer models
 - `NVIDIA_DeepLearningExample_BERT`: Modified throughput evaluation scripts based on [*DeepLearningExamples/PyTorch/LanguageModeling/BERT/*](https://github.com/NVIDIA/DeepLearningExamples/tree/128ecbe4f8ee0588112a854dabbbd7dc83751e87/PyTorch/LanguageModeling/BERT). The commit we use is 128ecbe4f8ee0588112a854dabbbd7dc83751e87.
 
 **Updates:**
